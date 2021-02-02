@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    background-color:#f2f2f2;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides, .mySlides2, .mySlides3{display: none}
+img {vertical-align: middle;}
+h1 {
+  text-align:center;
+  font-family:ubuntu;
+  font-size:45px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  min-width: 40%;
+  position: relative;
+  float: left;
+  margin: auto;
+}
+.slideshow-video{
+    max-width: 1000px;
+    min-width: 40%;
+    position: relative;
+    float: left;
+    margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.main{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-gap:30px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+.animate-right{position:relative;animation:animateright 1s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft 1s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-top{position:relative;animation:animatetop 1s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.texto{
+    text-align: center;
+    word-wrap:break-word;
+    font-family:Ubuntu;
+    font-size:20px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1011px) {
+  .prev, .next,.text {font-size: 11px}
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .texto{
+    font-size:16px;
+  }
+}
