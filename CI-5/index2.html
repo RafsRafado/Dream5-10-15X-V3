@@ -32,6 +32,7 @@
     </div>
 </div>
 <div class="wave2">
+  <div class="animar">
 <div class="textbloco2 animate-fading"><h2>Porquê escolher a CI-5?</h2>
   <div class="divtexto" style="width:60%;min-width:300px;text-align:center;margin:auto;margin-bottom:150px;">
 <span class="texto">A CI-5 automatiza praticamente todas as etapas dos processos de manuseio de dinheiro no ponto-de-venda da sua loja.
@@ -43,8 +44,10 @@
 </div>
 </div>
 </div>
-  <h2 class="animate-fading">Dimensões</h2>
-  <div class="divtexto animate-fading" style="margin-bottom: 25px;">
+</div>
+<div class="animar">
+  <h2 class="">Dimensões</h2>
+  <div class="divtexto" style="margin-bottom: 25px;">
   <table align="center" border>
     <thead>
     <tr>
@@ -77,5 +80,30 @@
     </tbody>
     </table>
   </div>
+</div>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+      document.addEventListener("scroll", function(event) {
+          const classesanim = document.getElementsByClassName("animar");
+          const windowOffsetTop = window.innerHeight + window.scrollY;
+  
+          Array.prototype.forEach.call(classesanim, (classeanim) => {
+              const classeanimOffsetTop = classeanim.offsetTop;
+  
+              if (windowOffsetTop >= classeanimOffsetTop) {
+                  addClass(classeanim, "animate-fading");
+              }
+          });
+      });
+  });
+  
+  function addClass(element, className) {
+      const arrayClasses = element.className.split(" ");
+      if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+      }
+  }
+      </script>
 </html>
+
