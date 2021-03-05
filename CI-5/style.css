@@ -51,6 +51,10 @@ body {font-family: Verdana, sans-serif; margin:0;}
 .imgci5{
   width: 30%;
 }
+.video{
+  text-align: center;
+  margin:auto;
+}
 .featuresimg{
   display: inline-block;
   width: 10%;
@@ -201,6 +205,8 @@ h2 {
     word-wrap:break-word;
     font-family:Rubik;
     font-size:16px;
+}
+.animar{
 }
 .textot{
   text-align: center;
