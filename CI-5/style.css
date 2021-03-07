@@ -13,6 +13,13 @@ body {font-family: Verdana, sans-serif; margin:0;}
   top:0;
   background-position: center;
 }
+.imagem1{
+  width: 100%;
+  margin:0;
+}
+.divimagem1{
+  width:0;
+}
 .wave2{
   display: inline-block;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230099ff' fill-opacity='0.6' d='M0,96L480,64L960,160L1440,288L1440,320L960,320L480,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
@@ -38,22 +45,38 @@ body {font-family: Verdana, sans-serif; margin:0;}
   background-repeat: no-repeat;
   background-size: 30%;
   margin: auto;
-  background-position: 0 0;
+  background-position: 15% 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF0066' d='M39.8,-69.1C51.3,-62.3,60.1,-51,64.2,-38.8C68.3,-26.5,67.7,-13.3,64.8,-1.7C61.9,9.9,56.6,19.8,53.6,33.8C50.5,47.9,49.6,66.1,41,73.4C32.4,80.6,16.2,77,2.9,72C-10.5,67,-20.9,60.7,-34.3,56.2C-47.6,51.7,-63.8,48.9,-67.4,39.9C-71,30.8,-62,15.4,-60.6,0.8C-59.1,-13.7,-65.2,-27.4,-61.4,-36.2C-57.6,-45,-44,-48.8,-32.1,-55.4C-20.2,-62,-10.1,-71.3,2,-74.8C14.2,-78.3,28.3,-76,39.8,-69.1Z' transform='translate(100 100)' /%3E%3C/svg%3E");
 }
 .textresponsive{
-  width:60%;
+  width:40%;
   height: 100%;
   margin-right:10%;
-  margin-top:5%;
   float: right;
+}
+.textresponsive2{
+  width:33%;
+  min-width:300px;
+  float:right;
+  margin-right:9%;
+  margin-top:5%;
+}
+.textbloco2{
+  margin-top:250px;
+}
+.img1{
+  margin-left:15%;
+  margin-top:5%;
 }
 .imgci5{
   width: 30%;
+  float: none;
+  margin-left: 200px;
 }
 .video{
   text-align: center;
   margin:auto;
+  margin-top:80px;
 }
 .featuresimg{
   display: inline-block;
@@ -204,7 +227,7 @@ h2 {
     text-align: center;
     word-wrap:break-word;
     font-family:Rubik;
-    font-size:16px;
+    font-size:22px;
 }
 .animar{
 }
@@ -224,7 +247,7 @@ h2 {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:1050px) {
   .imgback{
     display: inline-block;
     width: 100%;
@@ -241,7 +264,7 @@ h2 {
     margin-left:10%;
   }
   .textbloco2{
-    margin-top:80px;
+    margin-top:150px;
   }
   .textresponsive{
     min-width: 300px;
@@ -249,5 +272,14 @@ h2 {
     text-align: center;
     margin:auto;
     margin-top:25px;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+  .divimagem1{
+    text-align: center;
+    margin:auto;
+    width: 85%;
+    margin-bottom:50px;
   }
 }
