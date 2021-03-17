@@ -95,7 +95,7 @@ img.vert-move {
     position: relative;
     text-align: center;
     margin:auto;
-    top:30%;
+    top:25%;
     width: 75px;
     height: 75px;
     transition: transform .2s;
