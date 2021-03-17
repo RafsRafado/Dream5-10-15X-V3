@@ -31,7 +31,10 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+}
+.sec3{
+    width:500px;
+    height:500px;
 }
 .titulo{
     margin:7%;
@@ -95,7 +98,7 @@ img.vert-move {
     position: relative;
     text-align: center;
     margin:auto;
-    top:25%;
+    top:23%;
     width: 75px;
     height: 75px;
     transition: transform .2s;
@@ -228,7 +231,7 @@ img.vert-move {
 
   @media only screen and (max-width:1650px){
     .botaolink{
-        top:12em;
+        top:15em;
     } 
   }
   @media only screen and (max-width:1453px){
