@@ -176,7 +176,7 @@ img{
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     background: linear-gradient(90deg,#70A8C9, #6ECD9F);
     width:100%;
-    margin-top:50px;
+    padding-top:50px;
     height:auto;
     overflow: hidden;
 }
