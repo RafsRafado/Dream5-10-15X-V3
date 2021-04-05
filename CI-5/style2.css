@@ -166,7 +166,9 @@ img{
     display: flex;
     width: 100%;
     overflow: hidden;
-    height: 750px;
+    height: auto;
+    padding-bottom: 50px;
+    min-height: 600px;
     background-image:url("imagens/fundosec2.png");
     background-attachment: fixed;
     background-position: center;
@@ -285,6 +287,16 @@ img.vert-move {
     background-image: url("data:image/svg+xml,%3Csvg width='151' height='143' viewBox='0 0 151 143' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='75.5' cy='74' rx='63.5' ry='64' fill='url(%23paint0_linear)'/%3E%3Cpath d='M75.5 26V121.333' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M113.25 85.5833L75.5 121.333L37.75 85.5833' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='75.5' y1='10' x2='75.5' y2='138' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300D1FF'/%3E%3Cstop offset='1' stop-color='%2300FFA3'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
 }
+.flipboxes{
+    position: relative;
+    width:100%;
+    text-align: center;
+    display: grid;
+    margin:auto;
+    margin-top:100px;
+    gap:25px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
 .botao:hover{
     transform: scale(1.5,1.5); 
 }
@@ -292,25 +304,10 @@ img.vert-move {
     width: 100%;
     height: 100%;
 }
-.pos1{
-    margin-top:13%;
-    margin-left: 7%;
-}
-.pos2{
-    margin-top:13%;
-    margin-left: 4%;
-}
-.pos3{
-    margin-top:13%;
-    margin-left: 4%;
-}
-.pos4{
-    margin-top:13%;
-    margin-left: 4%;
-    margin-right:7%;
-}
 .flip-box {
     position: relative;
+    text-align: center;
+    margin: auto;
     display: block;
     background-color: transparent;
     width: 40%;
@@ -415,39 +412,6 @@ img.vert-move {
 
   }
   @media only screen and (max-width:1453px){
-      .sec2{
-          height: 1100px;
-      }
-      .flip-box{
-        position: absolute;
-        display:inline-block;
-        background-color: transparent;
-        width: 35%;
-        height: 20%;
-    }
-    .pos1{
-        position: absolute;
-        margin:auto;
-        margin-left:6%;
-        margin-top:150px;
-    }
-    .pos2{
-        position: absolute;
-        margin:auto;
-        margin-left:55%;
-        margin-top:150px;
-    }
-    .pos3{
-        position: absolute;
-        margin:auto;
-        margin-left:6%;
-        margin-top:650px;
-        }
-        .pos4{
-            position: absolute;
-            margin-top:650px;
-            margin-left:55%;
-            }
             .videodiv{
                 margin-top:5%;
             }
@@ -498,44 +462,6 @@ img.vert-move {
   }
 
   }
-  @media only screen and (max-width:800px){
-
-    .sec2{
-        height: 1700px;
-    }
-    .flip-box{
-        position: absolute;
-        display:inline-block;
-        background-color: transparent;
-        width: 80%;
-        height: 25%;
-        min-width: none;
-        min-height: none;
-    }
-  .pos1{
-    position: absolute;
-    margin-left:10%;
-    margin-top:120px;
-}
-.pos2{
-    position: absolute;
-    text-align: center;
-    margin:0 auto;
-    margin-left: 10%;
-    margin-top:500px;
-}
-.pos3{
-    position: absolute;
-    margin:auto;
-    margin-left:10%;
-    margin-top:880px;
-    }
-    .pos4{
-        position: absolute;
-        margin-left:10%;
-        margin-top:1260px;
-        }
-    }
 @media only screen and (min-width:860px) and (max-width:1335px){
     .imagem{
         margin-top:150px;
@@ -579,10 +505,23 @@ img.vert-move {
         width: auto;
         height: auto;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 54%;
         margin-top:15%;
     }
     .botao{
         display: none;
     }
+}
+
+@media only screen and (max-width:860px){
+    .flip-box {
+        position: relative;
+        text-align: center;
+        margin: auto;
+        display: block;
+        background-color: transparent;
+        width: auto;
+        height: 250px;
+        min-width: 80%;
+      }
 }
