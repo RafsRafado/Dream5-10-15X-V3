@@ -10,13 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="vidpopupovl" id="displ">
-    <div class="botaofechar"><a href="#" onclick="stopVideo();return false;"><img src="imagens/botaofechar.svg" alt=""></a></div>
-  <div class="vidpopup" id="video"></div>
-</div>
     <div class="fundo">
         <div class="imagem">
-            <img class="vert-move" src="imagens/DREAM5.png" alt="">
+            <img class="vert-move" src="imagens/Dream 5-1.png" alt="">
         </div>
         <div class="titulo">
             <h1>Dream 5</h1>
@@ -27,7 +23,7 @@
                 simples para facilitar a integração em vários formatos de loja </span>
         </div>
         <div class="imagemresp">
-            <img class="vert-move" src="imagens/DREAM5.png" alt="">
+            <img class="vert-move" src="imagens/Dream 5-1.png" alt="">
         </div>
         <div class="botaolink">
         <a href="#sec2">
@@ -98,15 +94,12 @@
           </div>
         </div>
   </div>
-    <div style="background: linear-gradient(90deg,#70A8C9, #6ECD9F);text-align: center;">
-      <!--<h1>Título</h1>-->
+    <div class="titulosec3">
+      <h1 style="font-weight:500;">EFICIÊNCIA, CONFIANÇA E DESEMPENHO</h1>
+      <BR>
+      <h2 style="font-weight:400;">A SOLUÇÃO ADEQUADA PARA O SEU NEGÓCIO!</h2>
       </div>
     <div class="sec3">
-<!--
-      <div class="videodivresp">
-        <iframe width="" height="" style="width: 100%;height: 100%;" src="https://www.youtube.com/embed/2w5pNK6wtXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        -->
       <div class="">
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -131,16 +124,68 @@
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
     </div>
-    <!--
-    <div class="videodiv">
-      <img src="imagens/fundovid.svg" alt="aaa" style="width:80%;height:auto;margin-top:60px;float:right;transform:rotate(-20deg);text-align: center;">
-        <div class="">
-      <div class="video" onclick="abrirvideo();return false;">
-      </div>
-    </div>
-    -->
     </div>
   </div>
+  </div>
+  <div class="sec4">
+    <div class="overlay"></div>
+    <div class="caixasinformacao">
+      <div class="caixa">
+        <div class="iconcaixa">
+          <img src="imagens/Software House.png" alt="icon1">
+        </div>
+        <div class="titulocaixa">
+          <span>Software "House"</span>
+        </div>
+        <div class="textocaixa">
+          <span>Caixas de Pagamento Automático com software personalizado projetado e desenvolvido pela Dream-ID para si.</span>
+        </div>
+      </div>
+      <div class="caixa">
+        <div class="iconcaixa">
+          <img src="imagens/Instalação e configuração.png" alt="icon1">
+        </div>
+        <div class="titulocaixa">
+          <span>Instalação e configuração</span>
+        </div>
+        <div class="textocaixa">
+          <span>Com a Dream-ID não têm que se preocupar com nada. Desde a instalação à integração com o seu software de faturação.</span>
+        </div>
+      </div>
+      <div class="caixa">
+        <div class="iconcaixa">
+          <img src="imagens/Formação.png" alt="icon1">
+        </div>
+        <div class="titulocaixa">
+          <span>Formação</span>
+        </div>
+        <div class="textocaixa">
+          <span>Os seus colaboradores serão totalmente formados para obter o máximo de aproveitamento e rendimento.</span>
+        </div>
+      </div>
+      <div class="caixa">
+        <div class="iconcaixa">
+          <img src="imagens/Atualizações e manutenção.png" alt="icon1">
+        </div>
+        <div class="titulocaixa">
+          <span>Atualizações e manuntenção</span>
+        </div>
+        <div class="textocaixa">
+          <span>As nossas caixas de pagamento automático estarão sempre a receber o software mais recente disponível.</span>
+        </div>
+      </div>
+      <div class="caixa">
+        <div class="iconcaixa">
+          <img src="imagens/Equipa Especializada.png" alt="icon1">
+        </div>
+        <div class="titulocaixa">
+          <span>Equipa Especializada</span>
+        </div>
+        <div class="textocaixa">
+          <span>Equipa à disposição 24 horas por dia para o ajudar remotamente a evitar qualquer intervenção técnica.</span>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script>
@@ -170,48 +215,5 @@
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
-      function abrirvideo() {
-        document.getElementById("displ").style.display = "flex"
-        checkex= document.getElementById("www-widgetapi-script");
-        if(checkex){
-          player.playVideo;
-        }else{
-        document.getElementById("video").innerHTML = "<div id='player'></div>";
-        var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      
-
-      var player;
-      }
-    }
-      function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-              height: '390',
-              width: '640',
-              videoId: '2w5pNK6wtXI',
-              events: {
-                  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
-              }
-          });
-      }
-
-      function onPlayerReady(event) {
-          event.target.playVideo();
-      }
-
-      var done = false;
-      function onPlayerStateChange(event) {
-          if (event.data == YT.PlayerState.PLAYING && !done) {
-              done = true;
-          }
-      }
-      function stopVideo() {
-        player.stopVideo();
-        document.getElementById("displ").style.display="none";
-      }
   </script>
 </html>
