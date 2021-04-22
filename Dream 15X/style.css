@@ -124,7 +124,7 @@ img{
     height: auto;
     padding-bottom: 50px;
     min-height: 600px;
-    background-image:url("../imagensDream 15X-4.jpg");
+    background-image:url("imagens/Dream 15X-4.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ img{
     height: auto;
     padding-bottom: 50px;
     min-height: 600px;
-    background-image:url("../imagensDream 15X-2.png");
+    background-image:url("imagens/Dream 15X-2.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -192,7 +192,7 @@ img{
     float:right;
     margin-top:7em;
     margin-right: 6%;
-    background-image: url("../imagensfundoimg.svg");
+    background-image: url("imagens/fundoimg.svg");
     background-size: 65%;
     background-position: 150px 0;
     background-repeat: no-repeat;
@@ -362,35 +362,35 @@ img.vert-move {
     width: 100%;
   }
   .flip-box-front1 {
-    background-image:url("../imagensDream 15X-2.png");
+    background-image:url("imagens/Dream 15X-2.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front2 {
-    background-image:url("../imagens13.png");
+    background-image:url("imagens/13.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front3 {
-    background-image:url("../imagensDream 15X-4.jpg");
+    background-image:url("imagens/Dream 15X-4.jpg");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front4 {
-    background-image:url("../imagensDream 15X-5.jpg");
+    background-image:url("imagens/Dream 15X-5.jpg");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front5 {
-    background-image:url("../imagensimagem1.png");
+    background-image:url("imagens/imagem1.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
@@ -478,7 +478,7 @@ img.vert-move {
         width: 80%;
     }
     .imagemresp{
-        background-image: url("../imagensfundoimg.svg");
+        background-image: url("imagens/fundoimg.svg");
         background-size: 65%;
         background-position: 35% 0;
         background-repeat: no-repeat;
