@@ -179,7 +179,7 @@ img{
     height: auto;
     padding-bottom: 50px;
     min-height: 600px;
-    background-image:url("../imagensDream 10-7.jpg");
+    background-image:url("imagens/Dream 10-7.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -193,7 +193,7 @@ img{
     height: auto;
     padding-bottom: 50px;
     min-height: 600px;
-    background-image:url("../imagensDream 10-3.jpg");
+    background-image:url("imagens/Dream 10-3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ img{
     float:right;
     margin-top:7em;
     margin-right: 6%;
-    background-image: url("../imagensfundoimg.svg");
+    background-image: url("imagens/fundoimg.svg");
     background-size: 65%;
     background-position: 150px 0;
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ img.vert-move {
     height: 200px;
     transition: transform .2s;
     background-size: 100%;
-    background-image: url("../imagensbotaoplay.svg");
+    background-image: url("imagens/botaoplay.svg");
     background-repeat: no-repeat;
 }
 .video:hover{
@@ -434,28 +434,28 @@ img.vert-move {
     border-radius:52px;
   }
   .flip-box-front1 {
-    background-image:url("../imagensDream 10-5.jpg");
+    background-image:url("imagens/Dream 10-5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front2 {
-    background-image:url("../imagensDream 10-2.jpg");
+    background-image:url("imagens/Dream 10-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front3 {
-    background-image:url("../imagensDream 10-4.jpg");
+    background-image:url("imagens/Dream 10-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     border-radius:52px;
   }
   .flip-box-front4 {
-    background-image:url("../imagensimagem1.png");
+    background-image:url("imagens/imagem1.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     color: white;
@@ -526,7 +526,7 @@ img.vert-move {
     height: 100%;
     transition: transform .2s;
     background-size: 100%;
-    background-image: url("../imagensbotaoplay.svg");
+    background-image: url("imagens/botaoplay.svg");
     background-repeat: no-repeat;
   }
   .videodivresp{
@@ -579,7 +579,7 @@ img.vert-move {
         width: 80%;
     }
     .imagemresp{
-        background-image: url("../imagensfundoimg.svg");
+        background-image: url("imagens/fundoimg.svg");
         background-size: 65%;
         background-position: 35% 0;
         background-repeat: no-repeat;
